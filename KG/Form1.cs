@@ -4,7 +4,7 @@ namespace KG
 {
     public partial class Form1 : Form
     {
-        const int MaxN = 10; // максимально допустимая размерность матрицы 
+        const int MaxN = 4; // максимально допустимая размерность матрицы 
         int n = 3;  // текущая размерность матрицы
         TextBox[,] MatrText = null; // матрица элементов типа TextBox
         double[,] Matr1 = new double[MaxN, MaxN]; // матрица 1 чисел с плавающей точкой
@@ -12,7 +12,7 @@ namespace KG
         double[,] Matr3 = new double[MaxN, MaxN]; // матрица результатов
         bool f1;  // флажок, который указывает о вводе данных в матрицу Matr1
         bool f2;  // флажок, который указывает о вводе данных в матрицу Matr2
-        int dx = 40, dy = 20; // ширина и высота ячейки в MatrText[,] 
+        int dx = 100, dy = 25; // ширина и высота ячейки в MatrText[,] 
         Form2
         form2 = null; // экземпляр (объект) класса формы Form2
         public Form1()
@@ -72,8 +72,8 @@ namespace KG
                     MatrText[i, j].Visible = true;
                 }
             // 4. Корректировка размеров формы
-            form2.Width = 10 + n * dx + 20;
-            form2.Height = 10 + n * dy + form2.button1.Height + 50;
+            form2.Width = 100 + n * dx + 40;
+            form2.Height = 30 + n * dy + form2.button1.Height + 50;
             // 5. Корректировка позиции и размеров кнопки на форме Form2
             form2.button1.Left = 10;
             form2.button1.Top = 10 + n * dy + 10;
@@ -111,8 +111,8 @@ namespace KG
                     MatrText[i, j].Visible = true;
                 }
             // 4. Корректировка размеров формы
-            form2.Width = 10 + n * dx + 20;
-            form2.Height = 10 + n * dy + form2.button1.Height + 50;
+            form2.Width = 100 + n * dx + 40;
+            form2.Height = 30 + n * dy + form2.button1.Height + 50;
             // 5. Корректировка позиции и размеров кнопки на форме Form2
             form2.button1.Left = 10;
             form2.button1.Top = 10 + n * dy + 10;

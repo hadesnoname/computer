@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            chkDashedLine = new CheckBox();
             button5 = new Button();
             numericUpDownLineWidth = new NumericUpDown();
             button4 = new Button();
@@ -49,6 +50,7 @@
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(chkDashedLine);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(numericUpDownLineWidth);
             panel1.Controls.Add(button4);
@@ -60,6 +62,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(237, 440);
             panel1.TabIndex = 0;
+            // 
+            // chkDashedLine
+            // 
+            chkDashedLine.AutoSize = true;
+            chkDashedLine.Location = new Point(8, 291);
+            chkDashedLine.Name = "chkDashedLine";
+            chkDashedLine.Size = new Size(161, 24);
+            chkDashedLine.TabIndex = 7;
+            chkDashedLine.Text = "Пунктирная линия";
+            chkDashedLine.UseVisualStyleBackColor = true;
+            chkDashedLine.CheckedChanged += ChkDashedLine_CheckedChanged;
             // 
             // button5
             // 
@@ -174,6 +187,7 @@
             Text = "_2lab";
             Load += _2lab_Load;
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDownLineWidth).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -196,5 +210,6 @@
         private Button button4;
         private NumericUpDown numericUpDownLineWidth;
         private Button button5;
+        private CheckBox chkDashedLine;
     }
 }

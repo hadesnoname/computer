@@ -21,5 +21,11 @@ namespace KG
             _2lab lab2 = new _2lab();
             lab2.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            _3lab lab3 = new _3lab();
+            lab3.Show();
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace KG
     {
         bool f = true;
         int k, l; // элементы матрицы сдвига
-        int[,] kv = new int[6, 3]; // матрица тела
+        int[,] kv = new int[4, 3]; // матрица тела
         int[,] osi = new int[4, 3]; // матрица координат осей
         int[,] matr_sdv = new int[3, 3]; //матрица преобразования
         private int rotationAngle = 0;
@@ -55,23 +55,22 @@ namespace KG
             pictureBox1.Image = null;
             pictureBox1.Refresh();
         }
-        private void Init_kvadrat()
+        private void Init_figure()
         {
-            kv[0, 0] = -65; kv[0, 1] = 70; kv[0, 2] = 1;   // первая точка
-            kv[1, 0] = -4; kv[1, 1] = -78; kv[1, 2] = 1;  // вторая точка  
-            kv[2, 0] = -6; kv[2, 1] = 45; kv[2, 2] = 1;   // третья точка
-            kv[3, 0] = 56; kv[3, 1] = 72; kv[3, 2] = 1;   // четвертая точка
+            kv[0, 0] = -60; kv[0, 1] = 43; kv[0, 2] = 1;   // первая точка
+            kv[1, 0] = 1; kv[1, 1] = -105; kv[1, 2] = 1;   // вторая точка  
+            kv[2, 0] = -1; kv[2, 1] = 18; kv[2, 2] = 1;    // третья точка
+            kv[3, 0] = 61; kv[3, 1] = 45; kv[3, 2] = 1;    // четвертая точка
         }
         private void Draw_Kv()
         {
-            Init_kvadrat();
+            Init_figure();
             Init_matr_preob(k, l);
             int[,] kv1 = Multiply_matr(kv, matr_sdv);
 
             Pen myPen = new Pen(Color.Black, 2);
             Graphics g = Graphics.FromHwnd(pictureBox1.Handle);
 
-            // Рисуем 4 линии, соединяя точки согласно JSON
             g.DrawLine(myPen, kv1[0, 0], kv1[0, 1], kv1[1, 0], kv1[1, 1]);  // точка 0 -> точка 1
             g.DrawLine(myPen, kv1[0, 0], kv1[0, 1], kv1[2, 0], kv1[2, 1]);  // точка 0 -> точка 2
             g.DrawLine(myPen, kv1[2, 0], kv1[2, 1], kv1[3, 0], kv1[3, 1]);  // точка 2 -> точка 3
@@ -236,7 +235,7 @@ namespace KG
                     { 0, 0, 1 }
                 };
 
-                    Init_kvadrat(); // Инициализация фигуры (4 точки)
+                    Init_figure(); // Инициализация фигуры (4 точки)
 
                     // Применяем масштабирование к каждой вершине (без сдвига)
                     double[,] temp = new double[4, 3];
@@ -316,7 +315,7 @@ namespace KG
                     break;
             }
 
-            Init_kvadrat();
+            Init_figure();
 
             // Поворачиваем вершины
             double[,] temp = new double[4, 3];
@@ -365,7 +364,7 @@ namespace KG
                 { 0, 0, 1 }
             };
 
-            Init_kvadrat();
+            Init_figure();
 
             // Применяем отражение
             int[,] temp = Multiply_matr(kv, reflectY);
@@ -407,7 +406,7 @@ namespace KG
                 { 0, 0, 1 }
             };
 
-            Init_kvadrat();
+            Init_figure();
 
             int[,] temp = Multiply_matr(kv, reflectX);
 

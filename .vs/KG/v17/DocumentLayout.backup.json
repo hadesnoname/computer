@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ilyam\\source\\repos\\KG\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9583F1E-2D5A-4E0D-B7EC-32B6048909A8}|KG\\KG.csproj|c:\\users\\ilyam\\source\\repos\\kg\\kg\\3lab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9583F1E-2D5A-4E0D-B7EC-32B6048909A8}|KG\\KG.csproj|solutionrelative:kg\\3lab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9583F1E-2D5A-4E0D-B7EC-32B6048909A8}|KG\\KG.csproj|c:\\users\\ilyam\\source\\repos\\kg\\kg\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9583F1E-2D5A-4E0D-B7EC-32B6048909A8}|KG\\KG.csproj|solutionrelative:kg\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +39,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form5.cs",
+              "DocumentMoniker": "C:\\Users\\ilyam\\source\\repos\\KG\\KG\\Form5.cs",
+              "RelativeDocumentMoniker": "KG\\Form5.cs",
+              "ToolTip": "C:\\Users\\ilyam\\source\\repos\\KG\\KG\\Form5.cs",
+              "RelativeToolTip": "KG\\Form5.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAcwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:30:12.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "3lab.cs",
+              "DocumentMoniker": "C:\\Users\\ilyam\\source\\repos\\KG\\KG\\3lab.cs",
+              "RelativeDocumentMoniker": "KG\\3lab.cs",
+              "ToolTip": "C:\\Users\\ilyam\\source\\repos\\KG\\KG\\3lab.cs",
+              "RelativeToolTip": "KG\\3lab.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwDgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:30:10.747Z",
+              "EditorCaption": ""
             }
           ]
         },
